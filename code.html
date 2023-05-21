@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Codeflux</title>
+  </head>
+  <body>
+	<!-- Tools for thinking -->
+	<!-- Think from first principles -->
+	<!-- Spectrums. A good way to visualise the non binary nature of things -->
+	
+    <h3>No silver bullet</h3>
+	<!-- 2021-11-16 -->
+    <p>
+      I have always wanted to do things the "right" way. But I've come to see that there is no right way. For example, what folder structure do you use for your project. Group by type of file or group by code function. I've seen arguments ofor both, I've tried both. I've spent time on many projects deciding what to do. I think Dan Abramov's "move the files around until it feels right" is the truest approach.
+    </p>
+    <p>
+      There is a problem however. Moving things around works well when I'm the only developer or when I'm working with a team who cares about the place that "feels" the most right to put files and likes to communicate a lot to stay on the same page. In practice, I've found that choosing a sub optimal file structure and sticking to it produces the best results in the long run. Otherwise a lot of will has to be exerted keeping things from becoming a mess. And team communication and decision making bandwidth is best used elsewhere.
+      </p>
+
+	<h3>Frameworks</h3>
+	<!-- 2023-05-21 -->
+	<p>
+	  Should I use a framework? What is a framework?
+	</p>
+	<p>
+	  There is a spectrum. What is your codebase made up of?
+	  <pre>
+	  |-----------------------|---------------------|
+	  Language syntax       Library            Framework
+	  </pre>
+	  This represents how you approach writing code. On one extreme you write everything as custom code. The whole codebase is built fron scratch on the bedrock foundation of the syntax of your language. I could imagine this being done in C with a small standard library. Moving up the spectrum, you decide that it's crazy to be reinventing the wheel to implement strings or hash tables, so you use a battle tested library. HTTP servers, database clients, UI libraries. It doesn't seem to make much sense writing those yourself when all you want is a quick CRUD app. Then as you continue to move up the spectrum, you get sick of gluing a bunch of libraries together. Wouldn't it be better if there was a meta-library that combined an http server, authorization, routing, database connectivity. Then the only part of your CRUD app need to write is the actual business logic unique to your problem. A framework has been born!
+	</p>
+  </body>
+</html>
