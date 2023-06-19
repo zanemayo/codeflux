@@ -3,7 +3,7 @@
   <head>
     <title>Codeflux</title>
   </head>
-  <body>
+  <body style="max-width: 500px">
 	<!-- Tools for thinking -->
 	<!-- Think from first principles -->
 	<!-- Spectrums. A good way to visualise the non binary nature of things -->
@@ -27,8 +27,51 @@
 	  <pre>
 	  |-----------------------|---------------------|
 	  Language syntax       Library            Framework
-	  </pre>
+	  </pre>n
 	  This represents how you approach writing code. On one extreme you write everything as custom code. The whole codebase is built fron scratch on the bedrock foundation of the syntax of your language. I could imagine this being done in C with a small standard library. Moving up the spectrum, you decide that it's crazy to be reinventing the wheel to implement strings or hash tables, so you use a battle tested library. HTTP servers, database clients, UI libraries. It doesn't seem to make much sense writing those yourself when all you want is a quick CRUD app. Then as you continue to move up the spectrum, you get sick of gluing a bunch of libraries together. Wouldn't it be better if there was a meta-library that combined an http server, authorization, routing, database connectivity. Then the only part of your CRUD app need to write is the actual business logic unique to your problem. A framework has been born!
 	</p>
+
+	<h3>Mental models</h3>
+	<!--2023-06-19-->
+	<p>
+	  Mental models give you a framework for thinking about something. A way to look at something. If many things follow a similar pattern, then looking for known patterns can be quick way of coming to grips with something. Although I'm sure the wrong model can lead you astray. And all models can only go so far.
+	</p>
+	<h4>The Spectrum</h4>
+	<p>
+	  This is one I use a lot. Take a particular issue, choose a dimension, drow a continuem and label the left and right side with opposing extreme views. Then place intermediate ideas along the line. Consider the trade offs and decided where on the spectrum you want to be.
+	</p>
+	<p>
+	  For example:<br>
+	  <strong>Q. How should you build software</strong><br>
+	  <strong>Apply the spectrum:</strong>  Choose a dimension and draw a line.<br>
+	  <pre>
+	  |---------------------------------------------|
+	  Tactical tornado                   Architecture astronaut
+	  </pre>
+	  Think about the trade offs. eg. leaving an unmaintainable mess vs analysis paralysis. Or more positively, delivering value now vs building for the future.
+	</p>
+	<p>
+	  Then decide on where is most appropriate for you to be on the spectrum when it comes to your current context. There is often a broad middle that is viable and where you choose to be will ultimately depend on your personality, preferences etc. To discourage narrow thinking that there is only one right way, perhaps you will get along better with others by viewing the spectrum as:
+	</p>
+	<h4>The House</h4>
+	  <pre>
+	       / \
+	     /     \      <--- The attic of overdoing it (architecture astronaut)
+	   /         \
+	  -------------
+	  |           |
+	  |           |
+	  |           |   <--- The large living area of valid differing approaches
+	  |           |
+	  |           |
+	  -------------
+	    |      |
+	    |      |      <--- The basement of underdoing it (tactical tornado)
+	    --------
+	  </pre>
+	<p>
+	  The idea here is that there is a broad middle of posible approaches. And with some humility, accepting that we are not omniscient, allowing for other positions. Just as long as we can aggree to avoid the unlivible extremes of the attic and basement.
+	</p>
+	
   </body>
 </html>
